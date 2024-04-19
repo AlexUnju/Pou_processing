@@ -1,5 +1,5 @@
 class Piso {
-  int filas=20;
+  int filas;
   int columnas;
   int tamCelda;
   int offsetY = 775; // Definir un desplazamiento vertical
@@ -16,16 +16,16 @@ class Piso {
     for (int fila = 0; fila < filas; fila++) {      
       for (int columna = 0; columna < columnas; columna++) {
         int x = columna * tamCelda;
-        int y = fila * tamCelda + offsetY; // Agregar el desplazamiento vertical
+        int y = fila * tamCelda + offsetY; //desplazamiento vertical
         if (fila % 2 == 0) {
-          // Para filas pares, alternar entre rojo y blanco
+          //fila rojo y rosa
           if (columna % 2 == 0) {
             fill(#a71517); //rojo
           } else {
             fill(#d597a5); //rosa
           }
         } else {
-          // Para filas impares, alternar entre rojo y rosado
+          // fila rosa y blanco
           if (columna % 2 == 0) {
             fill(#d597a5); //rosa
           } else {

@@ -12,11 +12,7 @@ class Pou{
     imageMode(CENTER);
     image(imagen_pou,posicion.x,posicion.y,300,300);
   }
-  /**
-  * Mueve la posicon hacia izquierda o derecha según lo 
-  * que se indique en el atributo velocidad
-  * direccion (0:izquierda; 1=derecha; 2 = arriba, 3= abajo)
-  */
+
   public void mover(int direccion){
     if(direccion==0){
       this.posicion.x-=this.velocidad.x;
