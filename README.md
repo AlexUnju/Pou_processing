@@ -37,4 +37,4 @@ El proyecto contendrá los siguientes archivos:
 ## RESOLUCION:
 <img src="https://i.ibb.co/VHQ5vRz/Screenshot-2024-04-19-233715.png" alt="Screenshot-2024-04-19-233715" border="0"></br>
 ## DIAGRAMA EN DIA:
-<img src="https://i.ibb.co/J3g4xbJ/Diagrama.jpg" alt="Diagrama" border="0">
+<img src="https://i.ibb.co/B4qzfnf/Diagrama.jpg" alt="Diagrama" border="0">
