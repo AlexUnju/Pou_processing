@@ -5,17 +5,15 @@ private Comida2 comida2;
 private Comida3 comida3;
 private Comida4 comida4;
 private Comida5 comida5;
-
-PImage fondo;
+private Fondo fondo;
 
 public void setup(){
   size(600,900);
-
+  fondo = new Fondo(); // No necesitas especificar la ruta de la imagen aquí
   pou = new Pou(); 
   pou.setPosicion(new PVector(width/2,height-100));
   pou.setVelocidad(new PVector(10,10));
-  fondo = loadImage("fondo.jpg");
-  piso = new Piso(7, 30); // Crear un nuevo objeto de la clase Piso con 10 filas y 10 columnas
+  piso = new Piso(7, 30); // Crear un nuevo objeto de la clase Piso con 30 filas y 7 columnas
   comida1 = new Comida1();
   comida2 = new Comida2();
   comida3 = new Comida3();
@@ -26,7 +24,8 @@ public void setup(){
 
 public void draw(){
   background(0);
-  image(fondo,100,500,1000,1000);
+  fondo.dibujar(); // Dibujar el fondo
+
   piso.dibujar();
 
   pou.dibujar();
@@ -55,14 +54,6 @@ public void keyPressed(){
   if(key=='a'){
     pou.mover(0);
   }
-  
-  if(key=='w'){
-    pou.mover(2);
-  }
-  if(key=='s'){
-    pou.mover(3);
-  }
-  
 }
 
 public void actualizarVelocidadPou(){
