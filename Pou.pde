@@ -10,7 +10,7 @@ class Pou{
   
   public void dibujar(){
     imageMode(CENTER);
-    image(imagen_pou,posicion.x,posicion.y,300,300);
+    image(imagen_pou,posicion.x,posicion.y,210,200);
   }
 
   public void mover(int direccion){
@@ -20,13 +20,6 @@ class Pou{
     if(direccion==1){
       this.posicion.x+=this.velocidad.x;
     }
-    if(direccion==2){
-      this.posicion.y-=this.velocidad.y;
-    }
-    if(direccion==3){
-      this.posicion.y+=this.velocidad.y;
-    }
-    
   }
   
   public PVector getPosicion(){
