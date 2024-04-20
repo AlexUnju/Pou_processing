@@ -15,7 +15,7 @@ class Comida1 {
     this.velocidad = velocidad;
     this.imagen = loadImage("comida0.png");
   }
-
+    
   public void dibujar() {
     pushMatrix();
     translate(posicion.x, posicion.y);
